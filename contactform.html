@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>favoriete model</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Stuur je favoriete model op:</h1>
+    <nav>
+      <a href="index.html">
+        <h2>hoofd pagina</h2>
+      </a>
+
+    </nav>
+    <br>
+
+  </header>
+  <main>
+    <form name="contact" method="POST" data-netlify="true">
+      <section>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required />
+      </section>
+      <section>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required />
+      </section>
+      <section>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" />
+      </section>
+      <section>
+        <label for="age">leeftijd:</label>
+        <input type="number" name="age" min="1" max="200" step="5" />
+      </section>
+      <section>
+        <label for="date">verjaardag:</label>
+        <input type="date" name="date" min="2019-06-10" />
+      </section>
+
+      <section>
+        <h2>Favorite model:</h2>
+        <section>
+          <label for="military drone">military drone</label>
+          <input type="checkbox" name="military drone" />
+        </section>
+        <section>
+          <label for="multi-roter">multi-roter</label>
+          <input type="checkbox" name="multi-roter" />
+        </section>
+        <section>
+          <label for="fixed=wing">fixed-wing</label>
+          <input type="checkbox" name="fixed-wing" />
+        </section>
+        <section>
+          <label for="large-drone">large-drone</label>
+          <input type="checkbox" name="large-drone" />
+        </section>
+      </section>
+      <hr/>
+
+      <section>
+        <label for="color">Favoriete kleur van je model:</label>
+        <input type="color" name="color" />
+      </section>
+
+      <hr/>
+
+      <section>
+        <label for="bericht">Bericht:</label>
+        <br>
+        <textarea name="bericht"></textarea>
+      </section>
+      <input type="hidden" name="hidden" value="hi" />
+      <section>
+        <label for="foto">Foto van je build:</label>
+        <br>
+        <input type="file" name="file" />
+      </section>
+
+      <section>
+        <label for="url">Jou url pagina:</label>
+        <br>
+        <input type="url" name="url" id="url" />
+      </section>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
